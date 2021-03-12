@@ -96,7 +96,7 @@ header {
 }
 
 .banner {
-  background-color: --main-black;
+  background-color: var(--main-black);
 }
 
 .footer {
