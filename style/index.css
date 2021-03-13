@@ -99,6 +99,10 @@ header {
   background-color: var(--main-black);
 }
 
+.design {
+  background-color: var(--main-black);
+}
+
 .footer {
   background-color: var(--main-black);
 }
