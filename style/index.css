@@ -74,6 +74,7 @@ body {
 :root {
   --main-black: #000000;
   --main-white: #FFF;
+  --second-white: #F8F8F8;
   --main-red: linear-gradient(90deg, rgba(195,1,1,1) 0%, rgba(215,0,0,1) 100%);
   --grey-dark:#4A4A4A;
   --grey-weak: #767676;
@@ -257,6 +258,129 @@ body {
 
 .design {
   background-color: var(--main-black);
+}
+
+.buyNow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  padding: 50px;
+  background-color: var(--second-white);
+}
+
+.buyNow__gallery {
+  height: 75%;
+}
+
+.buyNow__slides {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.buyNow__slide {
+  width: 150px;
+}
+
+.buyNow__information {
+  margin-left: 50px;
+}
+
+.buyNow__brand {
+  color: var(--main-red);
+  font-size: 72px;
+  background: var(--main-red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buyNow__price {
+  font-size: 72px;
+}
+
+.buyNow__description {
+  margin-bottom: 32px;
+}
+
+.buyNow__selectSize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.buyNow__size {
+  width: 145px;
+  height: 38px;
+  border: 1px solid var(--main-black);
+  border-radius: 4px;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.buyNow__button {
+  background-image: var(--main-red);
+  color: var(--main-white);
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 16px;
+  font-size: 25px;
+}
+
+@media (max-width: 1050px) {
+  .buyNow {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buyNow__gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow: hidden;
+  }
+  .buyNow__slides {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .buyNow__slide {
+    width: 25%;
+  }
+  .buyNow__information {
+    margin: 0;
+  }
 }
 
 .footer {
