@@ -2,24 +2,22 @@
     display: flex;
     background-color: var(--main-black);
     height: 45px;
-    border: 1px solid gold;
+    
     overflow: hidden;
     justify-content: space-between;
     position: relative;
 
     &__icon {
         
-        img {
+        img { 
             height: 100%;
         }
 
-        border: 2px solid green;
 
     }
 
     &__navBar {
         color: var(--main-white);
-        border: 2px solid rebeccapurple;
         display: flex;
         align-items: center;
         
@@ -27,5 +25,17 @@
             margin-right: 2.5rem;
             
         }
+    }
+
+    &__button{
+        color: var(--main-white);
+        background: var(--main-red);
+        text-align: center;
+        height: 80%;
+        width: 173px;
+        border-radius: 3px;
+        font-size: 18px;
+        margin-right: 3rem;
+
     }
 }

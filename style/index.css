@@ -94,16 +94,11 @@ body {
   display: flex;
   background-color: var(--main-black);
   height: 45px;
-  border: 1px solid gold;
   overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-}
-
-.header__icon {
-  border: 2px solid green;
 }
 
 .header__icon img {
@@ -112,7 +107,6 @@ body {
 
 .header__navBar {
   color: var(--main-white);
-  border: 2px solid rebeccapurple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,6 +117,17 @@ body {
 
 .header__navBar a {
   margin-right: 2.5rem;
+}
+
+.header__button {
+  color: var(--main-white);
+  background: var(--main-red);
+  text-align: center;
+  height: 80%;
+  width: 173px;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-right: 3rem;
 }
 
 .hero {
