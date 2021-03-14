@@ -1,0 +1,31 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--main-black);
+    height: calc(100vh - 30px);
+    border: 1px solid red;
+   
+   
+
+    &__backImg{
+    height: 85%;   
+    }
+
+    &__frontImg{
+        
+        position: absolute;
+        height: 85%; 
+    }
+
+    &__button{
+        color: var(--main-white);
+        background: var(--main-red);
+        width: 344px;
+        height: 60px;
+        text-align: center;
+        
+        border-radius: 8px;
+        font-size: 25px;
+    }
+}

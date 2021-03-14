@@ -88,15 +88,76 @@ body {
   font-family: var(--main-font);
 }
 
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: var(--main-black);
+  height: 45px;
+  border: 1px solid gold;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
-.banner {
+.header__icon {
+  border: 2px solid green;
+}
+
+.header__icon img {
+  height: 100%;
+}
+
+.header__navBar {
+  color: var(--main-white);
+  border: 2px solid rebeccapurple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__navBar a {
+  margin-right: 2.5rem;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: var(--main-black);
+  height: calc(100vh - 30px);
+  border: 1px solid red;
+}
+
+.hero__backImg {
+  height: 85%;
+}
+
+.hero__frontImg {
+  position: absolute;
+  height: 85%;
+}
+
+.hero__button {
+  color: var(--main-white);
+  background: var(--main-red);
+  width: 344px;
+  height: 60px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 25px;
 }
 
 .design {
