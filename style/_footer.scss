@@ -1,18 +1,20 @@
 .footer{
     background-color: var(--main-black);
+    border: 2px solid red;
 
     &__brandInfo{
-
+        color: var(--main-white);
     }
 
     &__navBar{
-
+        color: var(--main-white);
     }
 
     &__socialMedia{
 
     }
     &__copyright{
-        
+        color: var(--main-white);
     }
+
 }
