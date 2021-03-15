@@ -1,60 +1,57 @@
-.buyNow{
+.buyNow {
     display: flex;
-    height: 700px;
     padding: 50px;
     background-color: var(--second-white);
-    
-    &__gallery{
+    border: 2px solid red;
+
+    &__gallery {
         height: 75%;
-        
-    }
-
-    &__main{
 
     }
 
-    &__slides{
+    &__main {}
+
+    &__slides {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        
+
     }
 
-    &__slide{
+    &__slide {
         width: 150px
     }
 
-    &__information{
+    &__information {
         margin-left: 50px;
     }
 
-    &__brand{
+    &__brand {
         color: var(--main-red);
         font-size: 72px;
         background: var(--main-red);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    &__reference{
 
-    }
+    &__reference {}
 
-    &__price{
+    &__price {
         font-size: 72px;
     }
 
-    &__description{
+    &__description {
         margin-bottom: 32px;
     }
 
-    &__selectSize{
+    &__selectSize {
         display: flex;
         // border: 1px solid red;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    &__size{
+    &__size {
         width: 145px;
         height: 38px;
         border: 1px solid var(--main-black);
@@ -62,7 +59,8 @@
         font-size: 20px;
         margin-top: 8px;
     }
-    &__button{
+
+    &__button {
         background-image: var(--main-red);
         color: var(--main-white);
         width: 100%;
@@ -74,36 +72,46 @@
     }
 
 }
+
 @media(max-width:1050px) {
 
-    .buyNow{
+    .buyNow {
         height: fit-content;
         flex-direction: column;
+        padding: 30px;
 
-        &__gallery{
+
+        &__gallery {
             display: flex;
             flex-direction: column;
             justify-content: center;
             height: fit-content;
+            width: 100%;
             min-height: 50%;
             flex: 1;
             overflow: hidden;
         }
-    
-    
-        &__slides{
+
+
+        &__slides {
             max-width: 100%;
             display: flex;
             justify-content: space-between;
         }
-    
-        &__slide{
+
+        &__slide {
             width: 25%;
         }
 
-    &__information{
-        margin: 0;
-    }
+        &__brand {
+            font-size: 60px;
+        }
+
+        &__information {
+            margin: 0;
+        }
     }
 
 }
+
+@media(max-width:1050px) {}
