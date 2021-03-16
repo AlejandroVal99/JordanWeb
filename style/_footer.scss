@@ -1,20 +1,117 @@
-.footer{
+.footer {
     background-color: var(--main-black);
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px 20px 50px;
+    border-top: 2px solid var(--main-white);
 
-    &__brandInfo{
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__brandInfo {
         color: var(--main-white);
+        font-size: 14px;
+        border: 2px solid green;
+        width: 40%;
     }
 
-    &__navBar{
+    &__icon {
+        width: 12%;
+        margin-bottom: 24px;
+    }
+
+    &__descriptionBrand {}
+
+    &__navBar {
+        display: flex;
+        flex-direction: column;
         color: var(--main-white);
+        padding-right: 250px;
+        justify-content: center;
+        align-items: flex-start;
+
+        a {
+            margin-top: 8px;
+        }
     }
 
-    &__socialMedia{
+    &__socialMedia {
+        height: 20%;
 
+        margin-top: 24px;
     }
-    &__copyright{
+
+
+    &__socialIcon {
+        height: 40px;
+
+        margin: 0 4px;
+    }
+
+    &__copyright {
         color: var(--main-white);
+        font-size: 14px;
+        margin-top: 16px;
+        text-align: center;
     }
+
+    &__button {
+        background-image: var(--main-red);
+        color: var(--main-white);
+        width: 180%;
+        height: 48px;
+        border-radius: 4px;
+        margin-top: 16px;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .footer {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__brandInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+        }
+
+        &__navBar {
+            display: flex;
+            flex-direction: column;
+            color: var(--main-white);
+            margin-top: 32px;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            a {
+                margin-top: 8px;
+            }
+        }
+
+        &__button {
+            width: 80%;
+
+        }
+
+        &__socialMedia {
+            margin-top: 32px;
+        }
+
+    }
+
+
 
 }
