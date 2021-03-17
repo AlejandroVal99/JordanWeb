@@ -2,7 +2,7 @@
     display: flex;
     padding: 50px;
     background-color: var(--second-white);
-    border: 2px solid red;
+    
 
     &__gallery {
         height: 75%;
@@ -73,7 +73,16 @@
 
 }
 
-@media(max-width:1050px) {
+@media(max-width:1393px) {
+    .buyNow {
+        &__size {
+            width: 125px;
+
+        }
+    }
+}
+
+@media(max-width:1150px) {
 
     .buyNow {
         height: fit-content;
@@ -110,8 +119,20 @@
         &__information {
             margin: 0;
         }
+
+        &__size {
+            width: 150px;
+
+        }
+
     }
 
 }
 
-@media(max-width:1050px) {}
+@media(max-width:962px) {
+    .buyNow {
+        &__size {
+            width: 130px;
+        }
+    }
+}

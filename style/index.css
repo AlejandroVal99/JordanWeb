@@ -96,7 +96,6 @@ body {
   display: flex;
   background-color: var(--main-black);
   height: 45px;
-  border: 2px solid green;
   overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -177,7 +176,6 @@ body {
 }
 
 .hero {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,6 +481,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .design__title {
+    font-size: 70px;
+  }
   .design__information {
     position: relative;
     -webkit-box-pack: center;
@@ -495,6 +496,7 @@ body {
     left: 0%;
     -webkit-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
+    margin-bottom: 48px;
   }
   .design__instruction {
     font-size: 16px;
@@ -515,13 +517,52 @@ body {
   }
 }
 
+@media (max-width: 580px) {
+  .design__point-jumpman {
+    -webkit-transform: translate(30%, -280%);
+            transform: translate(30%, -280%);
+  }
+  .design__point-print {
+    -webkit-transform: translate(410%, 0%);
+            transform: translate(410%, 0%);
+  }
+}
+
+@media (max-width: 500px) {
+  .design__point-jumpman {
+    -webkit-transform: translate(30%, -250%);
+            transform: translate(30%, -250%);
+  }
+  .design__point-print {
+    -webkit-transform: translate(300%, 0%);
+            transform: translate(300%, 0%);
+  }
+}
+
+@media (max-width: 390px) {
+  .design__title {
+    font-size: 55px;
+    -webkit-text-stroke-width: 2px;
+  }
+  .design__point {
+    width: 35px;
+  }
+  .design__point-jumpman {
+    -webkit-transform: translate(30%, -250%);
+            transform: translate(30%, -250%);
+  }
+  .design__point-print {
+    -webkit-transform: translate(300%, 0%);
+            transform: translate(300%, 0%);
+  }
+}
+
 .buyNow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 50px;
   background-color: var(--second-white);
-  border: 2px solid red;
 }
 
 .buyNow__gallery {
@@ -591,7 +632,13 @@ body {
   font-size: 25px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1393px) {
+  .buyNow__size {
+    width: 125px;
+  }
+}
+
+@media (max-width: 1150px) {
   .buyNow {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -640,6 +687,15 @@ body {
   }
   .buyNow__information {
     margin: 0;
+  }
+  .buyNow__size {
+    width: 150px;
+  }
+}
+
+@media (max-width: 962px) {
+  .buyNow__size {
+    width: 130px;
   }
 }
 
