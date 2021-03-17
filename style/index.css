@@ -76,6 +76,7 @@ body {
   --main-white: #FFF;
   --second-white: #F8F8F8;
   --main-red: linear-gradient(90deg, rgba(195,1,1,1) 0%, rgba(215,0,0,1) 100%);
+  --second-red:rgba(195,1,1,1);
   --grey-dark:#4A4A4A;
   --grey-weak: #767676;
   --gradient-white: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 73%);
@@ -274,7 +275,6 @@ body {
   position: relative;
   overflow: hidden;
   background-color: var(--second-white);
-  border: 2px solid rebeccapurple;
   padding: 40px 0px;
   width: 100%;
 }
@@ -393,6 +393,126 @@ body {
 
 .design {
   background-color: var(--main-black);
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+
+.design__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-55%, -130%);
+          transform: translate(-55%, -130%);
+  border: 2px solid magenta;
+}
+
+.design__title {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--second-red);
+  font-size: 80px;
+}
+
+.design__instruction {
+  color: var(--main-white);
+  font-size: 20px;
+  text-align: start;
+  width: 45%;
+}
+
+.design__interaction {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 60%;
+  margin-bottom: 25px;
+  margin-right: 50px;
+}
+
+.design__shoe {
+  width: 100%;
+}
+
+.design__point {
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.design__point-jumpman {
+  -webkit-transform: translate(30%, -320%);
+          transform: translate(30%, -320%);
+}
+
+.design__point-print {
+  -webkit-transform: translate(480%, 0%);
+          transform: translate(480%, 0%);
+}
+
+@media (max-width: 900px) {
+  .design {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .design__information {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  .design__instruction {
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+  }
+  .design__interaction {
+    top: 0%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0px;
+    border: 2px solid gold;
+    width: 85%;
+  }
+  .design__point {
+    width: 45px;
+  }
 }
 
 .buyNow {
@@ -542,7 +662,7 @@ body {
 .newsletter__title {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--main-white);
-  font-size: 80px;
+  font-size: 90px;
 }
 
 .newsletter__info {
@@ -694,7 +814,7 @@ body {
 .footer__brandInfo {
   color: var(--main-white);
   font-size: 14px;
-  border: 2px solid green;
+  text-align: center;
   width: 40%;
 }
 
