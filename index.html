@@ -16,32 +16,32 @@
             <img src="./resources/images/icons/jordan-icon.png" alt="">
         </a>
         <nav class="header__navBar">
-            <a href="#home">Home</a>
-            <a href="#design">Design</a>
-            <a href="#suscribe">Suscribe</a>
-            <button class="header__button" href="#buynow">BUY NOW</button>
+            <a href="#home_section">Home</a>
+            <a href="#design_section">Design</a>
+            <a href="#suscribe_section">Suscribe</a>
+            <button class="header__button" onclick="window.location.href='#buyNow_section'">BUY NOW</button>
         </nav>
         <img class="header__iconMobile" src="./resources/images/icons/burgermenu-icon.png" alt="">
 
         <nav class="header__navMobile">
 
 
-            <a href="#home">Home</a>
-            <a href="#design">Design</a>
-            <a href="#suscribe">Suscribe</a>
-            <button class="header__button" href="#buynow">BUY NOW</button>
+            <a href="#home_section">Home</a>
+            <a href="#design_section">Design</a>
+            <a href="#suscribe_section">Suscribe</a>
+            <button class="header__button" onclick="window.location.href='#buyNow_section'">BUY NOW</button>
 
         </nav>
     </header>
 
     <!--Banner-->
-    <section class="hero">
+    <section id="home_section" class="hero">
 
         <img src="./resources/images/banner/banner-img-letters.png" class="hero__backImg" alt="">
 
         <img src="./resources/images/banner/banner-img-shoes.png" alt="" class="hero__frontImg">
 
-        <button class="hero__button">BUY NOW</button>
+        <button class="hero__button" onclick="window.location.href='#buyNow_section'">BUY NOW</button>
 
     </section>
 
@@ -65,7 +65,7 @@
             <p class="sentence__letters sentence__letters-mobile">JORDAN <span>RETRO</span> MICAHEL JORDAN
                 <span>RETRO</span></p>
             <p class="sentence__letters sentence__letters-mobile">MICHAEL <span>JORDAN</span> MICHAEL
-                    <span>JORDAN</span> MICHAEL</p>
+                <span>JORDAN</span> MICHAEL</p>
             <p class="sentence__letters sentence__letters-mobile"> JORDAN <span>RETRO</span> MICHAEL JORDAN
                 <span>RETRO</span></p>
 
@@ -78,30 +78,40 @@
     </section>
 
     <!--Design-->
-    <section class="design">
+    <section id="design_section" class="design">
 
-        <div class="design__information">
+        <div class="design__main">
+            <div class="design__information">
 
-            <h1 class="design__title">DESIGN</h1>
+                <h1 class="design__title">DESIGN</h1>
 
-            <p class="design__instruction">Select a part to view information about some of the most distinctive features of              this design</p>
+                <p class="design__instruction">Select a part to view information about some of the most distinctive
+                    features
+                    of this design</p>
+
+            </div>
+
+            <div class="design__interaction">
+
+                <img class="design__shoe" src="./resources/images/design/details-img-shoe.png" alt="">
+
+                <img class="design__point design__point-jumpman " src="./resources/images/design/design-icon-point.png"
+                    alt="">
+                <img class="design__point  design__point-print" alt=""
+                    src="./resources/images/design/design-icon-point.png">
+                <img class="design__point design__point-tinker" alt=""
+                    src="./resources/images/design/design-icon-point.png">
+
+            </div>
 
         </div>
 
-        <div class="design__interaction">
 
-            <img class="design__shoe" src="./resources/images/design/details-img-shoe.png" alt="">
-
-            <img class="design__point design__point-jumpman " src="./resources/images/design/design-icon-point.png" alt="">
-            <img class="design__point  design__point-print" alt="" src="./resources/images/design/design-icon-point.png">
-            <img class="design__point design__point-tinker" alt="" src="./resources/images/design/design-icon-point.png">
-
-        </div>
 
     </section>
 
     <!--Buy Now-->
-    <section class="buyNow">
+    <section id="buyNow_section" class="buyNow">
 
         <div class="buyNow__gallery">
             <img class="buyNow__main" src="./resources/images/buyNow/buyNow-img-main.png" alt="">
@@ -134,7 +144,7 @@
 
     </section>
     <!--NewsLetter-->
-    <section class="newsletter">
+    <section id="suscribe_section" class="newsletter">
 
         <H1 class="newsletter__title">NEWSLETTER</H1>
         <p class="newsletter__info">Subscribe to receive information on all new jordan products and receive special
@@ -157,26 +167,26 @@
 
             <nav class="footer__navBar">
 
-                <a href="#home">Home</a>
-                <a href="#design">Design</a>
-                <a href="#suscribe">Suscribe</a>
-                <button class="footer__button" href="#buynow">BUY NOW</button>
+                <a href="#home_section">Home</a>
+                <a href="#design_section">Design</a>
+                <a href="#suscribe_section">Suscribe</a>
+                <button class="footer__button" onclick="window.location.href='#buyNow_section'">BUY NOW</button>
             </nav>
 
         </div>
 
         <div class="footer__socialMedia">
 
-            <a href="">
+            <a target="_blank" href="">
                 <img class="footer__socialIcon" src="./resources/images/icons/facebook-icon.png" alt="">
             </a>
-            <a href="">
+            <a target="_blank" href="">
                 <img class="footer__socialIcon" src="./resources/images/icons/instagram-icon.png" alt="">
             </a>
-            <a href="">
+            <a target="_blank" href="">
                 <img class="footer__socialIcon" src="./resources/images/icons/youtube-icon.png" alt="">
             </a>
-            <a href="">
+            <a target="_blank" href="">
                 <img class="footer__socialIcon" src="./resources/images/icons/spotify-icon.png" alt="">
             </a>
 

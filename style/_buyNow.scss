@@ -70,6 +70,10 @@
         font-size: 25px;
 
     }
+    &__size:focus{
+        background: var(--main-black);
+        color:var(--main-white);
+    }
 
 }
 
@@ -133,6 +137,10 @@
     .buyNow {
         &__size {
             width: 130px;
+        }
+        &__price{
+            font-size: 64px;
+            margin-top: 8px;
         }
     }
 }
