@@ -15,6 +15,7 @@
         flex-direction: column;
         justify-content: flex-end;
         position: relative;
+        display: none;
     }
 
     &__information {
@@ -75,7 +76,120 @@
 
         &-tinker {}
     }
+
+    //Jumpman part 
+    &__jumpman {
+        
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        display: none;
+        
+    }
+
+    &__jumpmanImg {
+        width: 50%;
+        z-index: 100;
+        object-fit: contain;
+        align-self: flex-end;
+        max-width: 662px;
+    }
+
+    &__jumpmanInfo {
+        position: relative;
+    }
+
+    &__jumpmanTitle {
+        font-size: 70px;
+        color: var(--second-red);
+        margin-top: 90px;
+        margin-left: 32px;
+
+    }
+
+    &__jumpmanLine {
+        width: 105%;
+        margin-left: -20%;
+        margin-top: 16px;
+    }
+
+    &__jumpmanText {
+        color: var(--main-white);
+        font-size: 20px;
+        width: 60%;
+        margin-top: 24px;
+        margin-left: 32px;
+    }
+
+    //Tinker part
+    &__tinker {
+        display: none;
+    }
+
+    &__tinkerImg {
+        width: 700px;
+    }
+
+    &__tinkerInfo {}
+
+    &__tinkerTitle {
+
+        color: var(--second-red);
+
+    }
+
+    &__tinkerLine {
+        width: 500px;
+
+    }
+
+    &__tinkerText {
+        color: var(--main-white);
+    }
+
+    //Print part
+    &__print {
+        display: none;
+    }
+
+    &__printInfo {}
+
+    &__printTitle {
+
+        color: var(--second-red);
+
+    }
+
+    &__printLine {
+        width: 500px;
+
+    }
+
+    &__printText {
+        color: var(--main-white);
+    }
 }
+
+@media (max-width: 1170px) {
+    .design {
+        &__jumpmanTitle {
+            margin-top: 50px;
+            margin-left: 32px;
+
+        }
+        &__jumpmanLine {
+            position: absolute;
+            transform: rotate(-90deg);
+            left:-40%;
+            top:25%;
+            
+            height: 2%;
+        }
+    }
+}
+
+
 
 @media (max-width: 900px) {
 
@@ -112,9 +226,7 @@
             top: 0%;
             align-self: center;
             margin: 0px;
-
             width: 85%;
-
         }
 
         &__point {
@@ -122,8 +234,77 @@
 
         }
 
+        //Jumpman part 
+        &__jumpman {
+            
+
+        }
+        &__jumpmanLine {
+            height: 5%;
+            top:65%;
+        }
+
+        &__jumpmanImg {
+           margin-bottom: 32px;
+        }
+
+        &__jumpmanInfo {
+            align-self: flex-start;
+        }
+
+        &__jumpmanTitle {
+           font-size: 60px;
+
+        }
+
+        &__jumpmanText {
+            font-size: 18px;
+        }
+
     }
 
+}
+
+@media (max-width: 700px){
+    .design{
+        &__jumpman {
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__jumpmanLine {
+           
+        }
+
+        &__jumpmanImg {
+         order:2;
+         align-self: center;
+         margin-bottom: 16px;
+         margin-top: 32px;
+         width: 80%;
+         margin-bottom: -25%;
+        }
+
+        &__jumpmanInfo {
+            order:1;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: 30%;
+        }
+
+        &__jumpmanTitle {
+            font-size: 40px;
+
+
+        }
+
+        &__jumpmanText {
+            font-size: 14px;
+            
+        }
+    }
 }
 
 @media (max-width: 580px) {
@@ -132,6 +313,7 @@
             justify-content: center;
             align-items: center;
         }
+
         &__point {
             &-jumpman {
                 transform: translate(30%, -280%);
@@ -141,6 +323,19 @@
 
                 transform: translate(410%, 0%);
             }
+        }
+        &__jumpmanLine {
+           left:-30%;
+           height: 10%;
+           top:110%;
+        }
+
+        &__jumpmanInfo {
+            order:1;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
         }
     }
 }
@@ -162,6 +357,9 @@
 
                 transform: translate(300%, 0%);
             }
+        }
+        &__jumpmanInfo{
+            margin-top: -90px;
         }
     }
 }
@@ -186,5 +384,9 @@
                 transform: translate(300%, 0%);
             }
         }
+       
+        &__jumpmanTitle {
+            margin-top: 0px;
+         }
     }
 }
