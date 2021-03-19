@@ -7,12 +7,14 @@
     padding-bottom: 64px;
 
     &__title {
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--main-white);
-        
+        background: -webkit-linear-gradient(-90deg, #fff 5%, #000 70%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        color:var(--main-black);
         
         font-size: 90px;
     }
+
 
     &__info {
         color: var(--main-white);

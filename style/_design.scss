@@ -32,8 +32,12 @@
 
 
     &__title {
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color: var(--second-red);
+
+        background: -webkit-linear-gradient(-90deg,rgba(195,1,1,1) 5%, #000 80%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 5px transparent;
+        color:var(--main-black);
+       
         font-size: 80px;
     }
 
@@ -258,6 +262,7 @@
 
         &__title {
             font-size: 70px;
+            
         }
 
         &__information {

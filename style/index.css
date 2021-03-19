@@ -458,8 +458,10 @@ body {
 }
 
 .design__title {
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--second-red);
+  background: -webkit-linear-gradient(-90deg, #c30101 5%, #000 80%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  color: var(--main-black);
   font-size: 80px;
 }
 
@@ -1080,8 +1082,10 @@ body {
 }
 
 .newsletter__title {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--main-white);
+  background: -webkit-linear-gradient(-90deg, #fff 5%, #000 70%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: var(--main-black);
   font-size: 90px;
 }
 
