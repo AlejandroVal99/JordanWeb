@@ -37,3 +37,38 @@ $otherImages.forEach(img => {
 
     img.addEventListener('click',handle_imgGallery);
 });
+
+
+//Design interaction
+$mainContain = document.querySelector(".design__main");
+// $jumpmanContain= document.querySelector(".design__jumpman");
+// $tinkerContain=document.querySelector(".design__tinker");
+// $printContain=document.querySelector('.design__print');
+$pointsSelect=document.querySelectorAll('.design__point');
+$otherSections=document.querySelectorAll('.design__section');
+
+$pointsSelect.forEach(point=>{
+    const handle_pointSelect=()=>{
+        const nameSection = point.getAttribute('data-section');
+        const sectionContainer = document.querySelector(`.design__${nameSection}`);
+
+        $mainContain.style.display="none";
+        sectionContainer.style.display="flex";
+        console.log(sectionContainer);
+
+    }
+    point.addEventListener('click',handle_pointSelect);
+})
+
+$otherSections.forEach(otherSection=>{
+    const handle_otherSection=()=>{
+        const sectionContainer = otherSection;
+
+        sectionContainer.style.display='none';
+        $mainContain.style.display="flex";
+
+        console.log(sectionContainer);
+    }
+
+    otherSection.addEventListener('click',handle_otherSection);
+})

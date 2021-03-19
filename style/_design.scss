@@ -15,7 +15,7 @@
         flex-direction: column;
         justify-content: flex-end;
         position: relative;
-        display: none;
+      
     }
 
     &__information {
@@ -79,13 +79,13 @@
 
     //Jumpman part 
     &__jumpman {
-        
+
         position: relative;
         display: flex;
         width: 100%;
         height: 100%;
         display: none;
-        
+
     }
 
     &__jumpmanImg {
@@ -124,50 +124,105 @@
 
     //Tinker part
     &__tinker {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+        display: flex;
         display: none;
+
     }
 
     &__tinkerImg {
-        width: 700px;
+
+        width: 60%;
+        position: absolute;
+        bottom: 0%;
+        right: 2%;
+        object-fit: cover;
+        z-index: 100;
     }
 
-    &__tinkerInfo {}
+    &__tinkerInfo {
+        width: 40%;
+        margin-top: 5%;
+        margin-left: 12%;
+    }
 
     &__tinkerTitle {
 
         color: var(--second-red);
-
+        font-size: 70px;
+        text-align: right;
     }
 
     &__tinkerLine {
-        width: 500px;
+        width: 30%;
 
+        position: absolute;
+        transform: rotate(-90deg);
+        left: 40%;
     }
 
     &__tinkerText {
         color: var(--main-white);
+        font-size: 20px;
+        text-align: right;
     }
 
     //Print part
     &__print {
+        width: 100%;
+        height: 100%;
         display: none;
+        align-items: center;
+        justify-content: center;
+
+
     }
 
-    &__printInfo {}
+    &__printImg {
+        width: 70%;
+        margin-left: -30%;
+        z-index: 100;
+        min-width: 850px;
+        object-fit: cover;
+    }
+
+    &__printInfo {
+        width: 50%;
+        margin-left: 5%;
+    }
 
     &__printTitle {
-
         color: var(--second-red);
+        font-size: 70px;
+        color: var(--second-red);
+        margin-bottom: 32px;
+        width: 70%;
 
     }
 
     &__printLine {
-        width: 500px;
+        width: 110%;
+        margin-left: -25%;
+
+        margin-bottom: 32px;
+
 
     }
 
     &__printText {
         color: var(--main-white);
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .design {
+        &__tinkerLine {
+            top: 55%;
+        }
     }
 }
 
@@ -178,12 +233,13 @@
             margin-left: 32px;
 
         }
+
         &__jumpmanLine {
             position: absolute;
             transform: rotate(-90deg);
-            left:-40%;
-            top:25%;
-            
+            left: -40%;
+            top: 25%;
+
             height: 2%;
         }
     }
@@ -235,17 +291,15 @@
         }
 
         //Jumpman part 
-        &__jumpman {
-            
+        &__jumpman {}
 
-        }
         &__jumpmanLine {
             height: 5%;
-            top:65%;
+            top: 65%;
         }
 
         &__jumpmanImg {
-           margin-bottom: 32px;
+            margin-bottom: 32px;
         }
 
         &__jumpmanInfo {
@@ -253,41 +307,43 @@
         }
 
         &__jumpmanTitle {
-           font-size: 60px;
+            font-size: 60px;
 
         }
 
         &__jumpmanText {
             font-size: 18px;
         }
+        &__printImg {
+            margin-left: -95%;
+        }
 
     }
 
 }
 
-@media (max-width: 700px){
-    .design{
+@media (max-width: 700px) {
+    .design {
         &__jumpman {
-            
+
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        &__jumpmanLine {
-           
-        }
+
+        &__jumpmanLine {}
 
         &__jumpmanImg {
-         order:2;
-         align-self: center;
-         margin-bottom: 16px;
-         margin-top: 32px;
-         width: 80%;
-         margin-bottom: -25%;
+            order: 2;
+            align-self: center;
+            margin-bottom: 16px;
+            margin-top: 32px;
+            width: 80%;
+            margin-bottom: -25%;
         }
 
         &__jumpmanInfo {
-            order:1;
+            order: 1;
             align-self: center;
             display: flex;
             flex-direction: column;
@@ -302,7 +358,18 @@
 
         &__jumpmanText {
             font-size: 14px;
-            
+
+        }
+        &__printTitle {
+            font-size: 40px;
+        }
+
+        &__printImg {
+            margin-left: -110%;
+        }
+
+        &__printText {
+            font-size: 14px;
         }
     }
 }
@@ -324,18 +391,44 @@
                 transform: translate(410%, 0%);
             }
         }
+
         &__jumpmanLine {
-           left:-30%;
-           height: 10%;
-           top:110%;
+            left: -30%;
+            height: 10%;
+            top: 110%;
         }
 
         &__jumpmanInfo {
-            order:1;
+            order: 1;
             align-self: center;
             display: flex;
             flex-direction: column;
             margin-left: 20%;
+        }
+
+        &__print {
+
+        }
+
+        &__printImg {
+            margin-left: -180%;
+        }
+
+        &__printInfo {
+            margin-left: 3%;
+        }
+
+        &__printTitle {
+            font-size: 35px;
+           margin-bottom: 16px;
+        }
+
+        &__printLine {
+            margin-bottom: 16px;
+        }
+
+        &__printText {
+           
         }
     }
 }
@@ -358,8 +451,50 @@
                 transform: translate(300%, 0%);
             }
         }
-        &__jumpmanInfo{
+
+        &__jumpmanInfo {
             margin-top: -90px;
+        }
+
+        //Tinker design
+        &__tinker {
+
+            flex-direction: column;
+            align-items: center;
+
+
+
+        }
+
+        &__tinkerImg {
+
+            width: 110%;
+            transform: translate(5%, 15%);
+        }
+
+        &__tinkerInfo {
+            margin-top: 50px;
+            margin-right: 25%;
+            width: 50%;
+        }
+
+        &__tinkerTitle {
+            font-size: 40px;
+            text-align: center;
+            width: 120%;
+            margin-bottom: 16px;
+        }
+
+        &__tinkerLine {
+            left: -15%;
+            top: 66%;
+            width: 75%;
+        }
+
+        &__tinkerText {
+            font-size: 14px;
+            text-align: center;
+            width: 120%;
         }
     }
 }
@@ -384,9 +519,19 @@
                 transform: translate(300%, 0%);
             }
         }
-       
+
+        &__tinkerLine {
+            display: none;
+        }
+
         &__jumpmanTitle {
             margin-top: 0px;
-         }
+        }
+        &__printImg {
+            margin-left: -250%;
+        }
     }
+}
+@media (max-width: 320px){
+
 }
