@@ -1,0 +1,121 @@
+.advertising{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--second-white);
+    &__title{
+        background: -webkit-linear-gradient(-90deg, var(--second-red) 5%,var(--second-white) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        color:var(--second-white);
+        
+        font-size: 90px;
+    
+    }
+    &__shoes{
+        display: flex;
+        justify-content: space-around;
+
+        margin-bottom: 32px;
+        width: 100%;
+    }
+}
+.cardShoe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--main-black);
+    width: 30%;
+    margin:0 16px;
+    &__image{
+        width: 70%;
+        margin-bottom: 16px;
+        margin-top: 38px;
+    }
+    &__title{
+        font-size: 30px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    &__price{
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+}
+@media(max-width:850px) {
+    .advertising{
+       
+        &__title{
+            text-align: center;
+            font-size: 70px;
+        
+        }
+       
+    }
+    
+    .cardShoe{
+        margin:0 8px;
+        &__image{
+            width: 80%;
+           
+        }
+        &__title{
+            font-size: 24px;
+            
+        }
+        &__price{
+           
+            font-size: 18px;
+        }
+    }
+
+}
+@media(max-width:500px) {
+    .advertising{
+       
+        &__title{
+           
+            font-size: 55px;
+        
+        }
+        &__shoes{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 32px;
+        }
+       
+    }
+    
+    .cardShoe{
+        margin:8px auto;
+        width: 70%;
+        &__image{
+            width: 80%;
+           
+        }
+        &__title{
+            font-size: 24px;
+            
+        }
+        &__price{
+           
+            font-size: 18px;
+        }
+    }
+}
+@media(max-width:415px) {
+   
+        .advertising{
+           
+            &__title{
+               
+                font-size: 250%;
+            
+            }
+           
+           
+        }
+}
