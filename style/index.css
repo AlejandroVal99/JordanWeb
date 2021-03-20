@@ -1192,6 +1192,7 @@ body {
   .cardShoe {
     margin: 8px auto;
     width: 70%;
+    margin: 16px 0;
   }
   .cardShoe__image {
     width: 80%;
