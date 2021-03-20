@@ -80,6 +80,9 @@
 
         &-tinker {}
     }
+    &__point:hover{
+        filter: drop-shadow(0rem 0rem 0.3rem rgba(0, 0, 0, 0.75));
+    }
 
     //Jumpman part 
     &__jumpman {

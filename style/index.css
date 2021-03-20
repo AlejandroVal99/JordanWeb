@@ -504,6 +504,11 @@ body {
           transform: translate(480%, 0%);
 }
 
+.design__point:hover {
+  -webkit-filter: drop-shadow(0rem 0rem 0.3rem rgba(0, 0, 0, 0.75));
+          filter: drop-shadow(0rem 0rem 0.3rem rgba(0, 0, 0, 0.75));
+}
+
 .design__jumpman {
   position: relative;
   display: -webkit-box;
@@ -937,6 +942,12 @@ body {
 
 .buyNow__slide {
   width: 150px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid var(--second-white);
+}
+
+.buyNow__slide:hover {
+  border-bottom: 2px solid var(--second-red);
 }
 
 .buyNow__information {
@@ -989,6 +1000,11 @@ body {
 }
 
 .buyNow__size:focus {
+  background: var(--main-black);
+  color: var(--main-white);
+}
+
+.buyNow__size:hover {
   background: var(--main-black);
   color: var(--main-white);
 }
@@ -1132,6 +1148,11 @@ body {
 .cardShoe__price {
   margin-bottom: 16px;
   font-size: 20px;
+}
+
+.cardShoe:hover {
+  border-color: var(--second-red);
+  color: var(--second-red);
 }
 
 @media (max-width: 850px) {

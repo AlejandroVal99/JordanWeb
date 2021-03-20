@@ -19,7 +19,12 @@
     }
 
     &__slide {
-        width: 150px
+        width: 150px;
+        margin-bottom: 8px;
+        border-bottom:2px solid var(--second-white);
+    }
+    &__slide:hover{
+        border-bottom:2px solid var(--second-red);
     }
 
     &__information {
@@ -71,6 +76,10 @@
 
     }
     &__size:focus{
+        background: var(--main-black);
+        color:var(--main-white);
+    }
+    &__size:hover{
         background: var(--main-black);
         color:var(--main-white);
     }

@@ -41,9 +41,6 @@ $otherImages.forEach(img => {
 
 //Design interaction
 $mainContain = document.querySelector(".design__main");
-// $jumpmanContain= document.querySelector(".design__jumpman");
-// $tinkerContain=document.querySelector(".design__tinker");
-// $printContain=document.querySelector('.design__print');
 $pointsSelect=document.querySelectorAll('.design__point');
 $otherSections=document.querySelectorAll('.design__section');
 
@@ -72,3 +69,30 @@ $otherSections.forEach(otherSection=>{
 
     otherSection.addEventListener('click',handle_otherSection);
 })
+
+
+//Parallax effect
+
+document.addEventListener('mousemove',parallaxHero);
+function parallaxHero(e){
+    this.querySelectorAll('.layer').forEach(layer =>{
+        const speed = layer.getAttribute('data-speed');
+
+        const x = (window.innerWidth - e.pageX*speed)/100;
+        const y = (window.innerHeight - e.pageY*speed)/100;
+
+        layer.style.transform=`translateX(${x}px) translateY(${y}px) `;
+        console.log(layer);
+    })
+}
+document.addEventListener('mousemove',parallaxSentence);
+function parallaxSentence(e){
+    this.querySelectorAll('.layerSentence').forEach(layer =>{
+        const speed = layer.getAttribute('data-speed');
+
+        const x = (window.innerWidth - e.pageX*speed)/100;
+
+        layer.style.transform=`translateX(${x}px)`;
+        console.log(layer);
+    })
+}

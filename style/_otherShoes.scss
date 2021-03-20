@@ -45,6 +45,11 @@
         font-size: 20px;
     }
 }
+.cardShoe:hover{
+    border-color:var(--second-red);
+    color:var(--second-red);
+}
+
 @media(max-width:850px) {
     .advertising{
        
