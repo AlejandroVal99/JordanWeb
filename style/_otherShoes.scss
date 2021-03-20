@@ -6,7 +6,7 @@
     padding-bottom: 32px;
     background-color: var(--second-white);
     &__title{
-        background: -webkit-linear-gradient(-90deg, var(--second-red) 5%,var(--second-white) 70%);
+        background: -webkit-linear-gradient(-90deg, var(--main-black) 5%,var(--second-white) 70%);
         -webkit-background-clip: text;
         -webkit-text-stroke: 4px transparent;
         color:var(--second-white);
@@ -30,6 +30,7 @@
     border: 2px solid var(--main-black);
     width: 30%;
     margin:0 16px;
+    border-radius: 8px;
     &__image{
         width: 70%;
         margin-bottom: 16px;

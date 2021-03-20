@@ -1097,7 +1097,7 @@ body {
 }
 
 .advertising__title {
-  background: -webkit-linear-gradient(-90deg, var(--second-red) 5%, var(--second-white) 70%);
+  background: -webkit-linear-gradient(-90deg, var(--main-black) 5%, var(--second-white) 70%);
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
   color: var(--second-white);
@@ -1131,6 +1131,7 @@ body {
   border: 2px solid var(--main-black);
   width: 30%;
   margin: 0 16px;
+  border-radius: 8px;
 }
 
 .cardShoe__image {
